@@ -5,9 +5,9 @@ CONFIG += c++11
 
 SOURCES += main.cpp \
     model.cpp \
+    datamanager.cpp \
     filter.cpp \
-    dataitem.cpp \
-    datamanager.cpp
+    entity.cpp
 
 RESOURCES += qml.qrc
 
@@ -21,6 +21,6 @@ include(deployment.pri)
 
 HEADERS += \
     model.h \
+    datamanager.h \
     filter.h \
-    dataitem.h \
-    datamanager.h
+    entity.h

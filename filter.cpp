@@ -1,6 +1,6 @@
 #include "filter.h"
 
-Filter::Filter()
+Filter::Filter(QObject *parent) : QObject(parent)
 {
 
 }

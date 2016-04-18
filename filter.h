@@ -1,11 +1,20 @@
 #ifndef FILTER_H
 #define FILTER_H
 
+#include <QObject>
 
-class Filter
+class Filter : public QObject
 {
+    Q_OBJECT
 public:
-    Filter();
+    explicit Filter(QObject *parent = 0);
+
+
+    virtual bool compare()=0;
+
+signals:
+
+public slots:
 };
 
 #endif // FILTER_H
